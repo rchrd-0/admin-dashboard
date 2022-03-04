@@ -1,14 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, div, p, a, span, ul, li {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
 }
 
 body {
-  box-sizing: content-box;
+  font-family: 'Jost', Helvetica, Arial, sans-serif;
+  background-color: #D8DEE9;
+  color: #434c5e;
 }
 
 ul {
   list-style-type: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.sidebar {
+  grid-row: 1 / span 2;
+  background-color: #4C566A;
+  color: #ECEFF4;
+}
+
+.sidebar a,
+.sidebar a:visited,
+.sidebar a:active {
+  text-decoration: none;
+  color: #ECEFF4;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr 2fr;
+  background-color: #ECEFF4;
+  color: #434c5e;
+}
+
+.header-account,
+.header-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+}
+
+.header-message {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+input[type="search"] {
+  max-width: 75%;
+  flex: 1;
+}
+
+.main-content {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.projects {
+  grid-area: 1 / 1 / span 2 / 2;
+}
+
+.cards-container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.project-card {
+  height: 200px;
+  border: 1px solid black;
+}
+
+.announcements {
+  grid-area: 1 / 2;
+}
+
+.announcements-card {
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.announcement-item:first-child,
+.announcement-item:nth-child(2) {
+  border-bottom: 1px solid black;
+}
+
+.trending {
+  grid-area: 2 / 2;
+}
+
+.trending-card {
+  border: 1px solid black;
+}
+
+.trending-item {
+  display: grid;
+  grid-template-columns: 50px 1fr;
 }
 
 .project-actions > button {
@@ -16,16 +129,27 @@ ul {
   height: 30px;
 }
 
+
+
+/* Placeholders for layout */
 .avatar {
   border: 1px solid black;
 }
 
-.placeholder-small {
-  width: 50px;
-  height: 50px;
+.placeholder-0 {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
 }
 
-.placeholder-large {
+.placeholder-1 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.placeholder-2 {
   width: 75px;
   height: 75px;
+  border: 1px solid black;
 }
