@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap');
 
+:root {
+  --light-base: #D8DEE9;
+  --light-secondary: #ECEFF4;
+  --dark-primary: #434C5E;
+  --dark-secondary: #4C566A;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,8 +23,8 @@ h1, h2, h3, div, p, a, span, ul, li {
 }
 
 body {
-  background-color: #D8DEE9;
-  color: #434c5e;
+  background-color: var(--light-base);
+  color: var(--dark-primary);
 
   font-family: 'Jost', Helvetica, Arial, sans-serif;
 }
@@ -29,9 +36,15 @@ ul {
 .container {
   display: grid;
   grid-template-columns: 320px 1fr;
-  grid-template-rows: 180px 1fr;
+  grid-template-rows: 200px 1fr;
 }
 
+.header,
+.main-content {
+  padding: 20px 60px 20px 40px;
+}
+
+/* Sidebar */
 .sidebar {
   grid-row: 1 / -1;
 
@@ -40,8 +53,8 @@ ul {
   gap: 40px;
   padding: 12px 24px;
 
-  background-color: #4C566A;
-  color: #ECEFF4;
+  background-color: var(--dark-secondary);
+  color: var(--light-secondary);
 
   font-size: 1.4rem;
   font-weight: 500;
@@ -68,6 +81,7 @@ ul {
   font-weight: 600;
 }
 
+/* PLACEHOLDERS */
 .sidebar .placeholder-0,
 .sidebar .placeholder-1 {
   justify-self: center;
@@ -80,37 +94,82 @@ ul {
   color: #ECEFF4;
 }
 
+/* Header and top bar */
 .header {
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: 1fr 2fr;
-  background-color: #ECEFF4;
-  color: #434c5e;
+  background-color: var(--light-secondary);
+  color: var(--dark-primary);
+  font-weight: 500;
 }
 
-.header-account,
-.header-actions {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.header-search {
+.header-cell {
   display: flex;
   align-items: center;
-}
-
-.header-message {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  gap: 20px;
 }
 
 input[type="search"] {
-  max-width: 75%;
+  -webkit-appearance: none;
+  appearance: none;
+
   flex: 1;
+  max-width: 75%;
+  padding: 0 10px;
+  border-radius: 4px;
+  border: 1px solid var(--dark-primary);
+
+  background-color: var(--light-base);
+  color: var(--dark-primary);
+  
+  line-height: 2rem;
+  font-family: inherit;
+  font-size: 1rem;
 }
 
+.account, 
+.message-wrapper h3 {
+  font-size: 1.2rem;
+}
+
+.account,
+.account-actions {
+  justify-content: flex-end;
+}
+
+.message-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.message-wrapper > * {
+  flex-basis: 100%;
+}
+
+.message-wrapper h3 {
+  font-weight: 400;
+}
+
+.message-wrapper h2 {
+  font-size: 1.5rem;
+}
+
+.account-actions button {
+  width: 100px;
+  height: 40px;
+  border: 1px solid var(--dark-primary);
+  border-radius: 16px;
+  
+  background-color: var(--light-secondary);  
+  color: var(--dark-primary);
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* Main content */
 .main-content {
   padding: 50px;
   display: grid;
