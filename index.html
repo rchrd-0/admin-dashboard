@@ -10,48 +10,48 @@
   <body>
     <div class="container">
       <div class="sidebar">
-          <div class="sidebar-head">
-            <div class="placeholder-1"></div>
-            <h1>Dashboard</h1>
-          </div>
+        <div class="sidebar-head">
+          <div class="img-med icon" id="dash-icon"></div>
+          <h1>Dashboard</h1>
+        </div>
         <div class="sidebar-nav">
           <ul>
             <li>
-              <div class="placeholder-0"></div>
+              <div class="img-small icon" id="home-icon"></div>
               <a href="#">Home</a>
             </li>
             <li>
-              <div class="placeholder-0"></div>
+              <div class="img-small icon" id="profile-icon"></div>
               <a href="#">Profile</a>
             </li>
             <li>
-              <div class="placeholder-0"></div>
+              <div class="img-small icon" id="message-icon"></div>
               <a href="#">Messages</a>
             </li>
             <li>
-              <div class="placeholder-0"></div>
+              <div class="img-small icon" id="history-icon"></div>
               <a href="#">History</a>
             </li>
             <li>
-              <div class="placeholder-0"></div>
+              <div class="img-small icon" id="tasks-icon"></div>
               <a href="#">Tasks</a>
             </li>
             <li>
-              <div class="placeholder-0"></div>
+              <div class="img-small icon" id="communities-icon"></div>
               <a href="#">Communities</a>
             </li>
           </ul>
           <ul>
             <li>
-              <div class="placeholder-0"></div>
+              <div class="img-small icon" id="settings-icon"></div>
               <a href="#">Settings</a>
             </li>
             <li>
-              <div class="placeholder-0"></div>
+              <div class="img-small icon" id="support-icon"></div>
               <a href="#">Support</a>
             </li>
             <li>
-              <div class="placeholder-0"></div>
+              <div class="img-small icon" id="privacy-icon"></div>
               <a href="#">Privacy</a>
             </li>
           </ul>
@@ -59,16 +59,20 @@
       </div>
       <div class="header">
         <div class="header-cell searchbar">
-          <div class="placeholder-0"></div>
-          <input type="search" name="" id="">
+          <label
+            for="searchbar"
+            class="img-small icon"
+            id="search-icon"
+          ></label>
+          <input type="search" name="query" id="searchbar">
         </div>
         <div class="header-cell account">
-          <div class="placeholder-0"></div>
-          <div class="avatar placeholder-1"></div>
-          <h3>Morgan Oakley</h2>
+          <div class="img-small icon" id="bell-icon"></div>
+          <div class="avatar img-med user-avatar"></div>
+          <h3>Morgan Oakley</h3>
         </div>
         <div class="header-cell header-message">
-          <div class="avatar placeholder-2"></div>
+          <div class="avatar img-large user-avatar"></div>
           <div class="message-wrapper">
             <h3>Hi there,</h3>
             <h2>Morgan Oakley (@morgan)</h2>
@@ -91,9 +95,9 @@
                 fugit doloribus laudantium cupiditate numquam ab.
               </p>
               <div class="project-actions">
-                <div class="placeholder-0"></div>
-                <div class="placeholder-0"></div>
-                <div class="placeholder-0"></div>
+                <div class="img-xs icon add-user-icon"></div>
+                <div class="img-xs icon edit-icon"></div>
+                <div class="img-xs icon tag-icon"></div>
               </div>
             </div>
             <div class="project-card card">
@@ -104,9 +108,9 @@
                 ratione voluptate in quibusdam odit.
               </p>
               <div class="project-actions">
-                <div class="placeholder-0"></div>
-                <div class="placeholder-0"></div>
-                <div class="placeholder-0"></div>
+                <div class="img-xs icon add-user-icon"></div>
+                <div class="img-xs icon edit-icon"></div>
+                <div class="img-xs icon tag-icon"></div>
               </div>
             </div>
             <div class="project-card card">
@@ -116,9 +120,9 @@
                 quam est nam?
               </p>
               <div class="project-actions">
-                <div class="placeholder-0"></div>
-                <div class="placeholder-0"></div>
-                <div class="placeholder-0"></div>
+                <div class="img-xs icon add-user-icon"></div>
+                <div class="img-xs icon edit-icon"></div>
+                <div class="img-xs icon tag-icon"></div>
               </div>
             </div>
             <div class="project-card card">
@@ -130,9 +134,9 @@
                 assumenda.
               </p>
               <div class="project-actions">
-                <div class="placeholder-0"></div>
-                <div class="placeholder-0"></div>
-                <div class="placeholder-0"></div>
+                <div class="img-xs icon add-user-icon"></div>
+                <div class="img-xs icon edit-icon"></div>
+                <div class="img-xs icon tag-icon"></div>
               </div>
             </div>
             <div class="project-card card">
@@ -143,9 +147,9 @@
                 obcaecati alias neque!
               </p>
               <div class="project-actions">
-                <div class="placeholder-0"></div>
-                <div class="placeholder-0"></div>
-                <div class="placeholder-0"></div>
+                <div class="img-xs icon add-user-icon"></div>
+                <div class="img-xs icon edit-icon"></div>
+                <div class="img-xs icon tag-icon"></div>
               </div>
             </div>
             <div class="project-card card">
@@ -156,9 +160,9 @@
                 repudiandae blanditiis.
               </p>
               <div class="project-actions">
-                <div class="placeholder-0"></div>
-                <div class="placeholder-0"></div>
-                <div class="placeholder-0"></div>
+                <div class="img-xs icon add-user-icon"></div>
+                <div class="img-xs icon edit-icon"></div>
+                <div class="img-xs icon tag-icon"></div>
               </div>
             </div>
           </div>
@@ -167,58 +171,66 @@
           <div class="announcements">
             <h2>Announcements</h2>
             <div class="announcements-card card">
-                <div class="announcement-item">
-                  <h3>Site Maintenance</h3>
-                  <p class="secondary-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
-                    eligendi Lorem.
-                  </p>
-                </div>
-                <div class="announcement-item">
-                  <h3>Community Share Day</h3>
-                  <p class="secondary-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Facilis in quisquam natus?
-                  </p>
-                </div>
-                <div class="announcement-item">
-                  <h3>Updated Privacy Policy</h3>
-                  <p class="secondary-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                    consectetur esse enim, quisquam.
-                  </p>
-                </div>
+              <div class="announcement-item">
+                <h3>Site Maintenance</h3>
+                <p class="secondary-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+                  eligendi Lorem.
+                </p>
               </div>
+              <div class="announcement-item">
+                <h3>Community Share Day</h3>
+                <p class="secondary-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis in quisquam natus?
+                </p>
+              </div>
+              <div class="announcement-item">
+                <h3>Updated Privacy Policy</h3>
+                <p class="secondary-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                  consectetur esse enim, quisquam.
+                </p>
+              </div>
+            </div>
           </div>
           <div class="trending">
             <h2>Trending</h2>
             <div class="trending-card card">
               <div class="trending-item">
-                <div class="avatar placeholder-1"></div>
+                <div class="avatar img-med" id="trending-1"></div>
                 <div class="trending-details">
                   <h3 class="username">@tegan</h3>
-                  <h3 class="trending-project secondary-text">World Peace Builder</h2>
+                  <h3 class="trending-project secondary-text">
+                    World Peace Builder
+                  </h3>
                 </div>
               </div>
               <div class="trending-item">
-                <div class="avatar placeholder-1"></div>
+                <div class="avatar img-med" id="trending-2"></div>
                 <div class="trending-details">
                   <h3 class="username">@morgan</h3>
-                  <h3 class="trending-project secondary-text">Super Cool Project</h2>
+                  <h3 class="trending-project secondary-text">
+                    Super Cool Project
+                  </h3>
                 </div>
               </div>
               <div class="trending-item">
-                <div class="avatar placeholder-1"></div>
+                <div class="avatar img-med" id="trending-3"></div>
                 <div class="trending-details">
                   <h3 class="username">@kendall</h3>
-                  <h3 class="trending-project secondary-text">Life Changing App</h2>
+                  <h3 class="trending-project secondary-text">
+                    Life Changing App
+                  </h3>
                 </div>
               </div>
               <div class="trending-item">
-                <div class="avatar placeholder-1"></div>
+                <div class="avatar img-med" id="trending-4"></div>
                 <div class="trending-details">
                   <h3 class="username">@alex</h3>
-                  <h3 class="trending-project secondary-text">No Traffic Maker</h2>
+                  <h3 class="trending-project secondary-text">
+                    No Traffic Maker
+                  </h3>
                 </div>
               </div>
             </div>
@@ -227,4 +239,4 @@
       </div>
     </div>
   </body>
-  </html>
+</html>
