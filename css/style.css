@@ -3,8 +3,13 @@
 :root {
   --light-base: #D8DEE9;
   --light-secondary: #ECEFF4;
-  --dark-primary: #434C5E;
+  --light-tertiary: #E5E9F0;
+  --dark-primary: #2e3440;
+  /* --dark-primary: #434C5E; */
   --dark-secondary: #4C566A;
+  --accent-primary: #8FBCBB;
+  --accent-secondary: #88C0D0;
+
 }
 
 * {
@@ -30,6 +35,10 @@ body {
 
 }
 
+.secondary-text {
+  color: var(--dark-secondary);
+}
+
 ul {
   list-style-type: none;
 }
@@ -37,7 +46,7 @@ ul {
 .container {
   display: grid;
   grid-template-columns: 300px 1fr;
-  grid-template-rows: 180px 1fr;
+  grid-template-rows: 200px 1fr;
 }
 
 .header, 
@@ -103,6 +112,8 @@ ul {
   grid-template-rows: 1fr 2fr;
   padding-top: 20px;
   padding-bottom: 30px;
+  row-gap: 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;;
 
 
   background-color: var(--light-secondary);
@@ -169,13 +180,15 @@ input[type="search"] {
 
 .account-actions button {
   width: 100px;
-  height: 38px;
-  border: 1px solid var(--dark-primary);
+  height: 40px;
+  /* border: 1px solid var(--dark-primary); */
   border-radius: 12px;
   
-  background-color: var(--light-secondary);  
+  background-color: var(--accent-secondary);
+  /* background-color: var(--light-secondary);   */
   color: var(--dark-primary);
 
+  font-size: 1.1rem;
   font-weight: 500;
 
   cursor: pointer;
@@ -215,7 +228,13 @@ input[type="search"] {
   display: flex;
   flex-direction: column;
   padding: 20px 30px;
-  border: 1px solid black;
+  border-left: 8px solid var(--accent-primary);
+}
+
+.card {
+  background-color: var(--light-tertiary);
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .project-actions {
@@ -241,7 +260,6 @@ input[type="search"] {
 /* Announcements section */
 .announcements-card {
   padding: 5px 30px 20px 30px;
-  border: 1px solid black;
 }
 
 .announcement-item {
@@ -269,13 +287,16 @@ input[type="search"] {
   flex-direction: column;
   gap: 15px;
   padding: 25px 25px;
-  border: 1px solid black;
 }
 
 .trending-item {
   display: grid;
   grid-template-columns: 50px 1fr;
   gap: 15px;
+}
+
+.trending-project {
+
 }
 
 .project-actions > button {
