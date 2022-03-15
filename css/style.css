@@ -92,18 +92,31 @@ ul {
   font-weight: 600;
 }
 
+.sidebar a,
+.sidebar a:visited,
+.sidebar a:active {
+  text-decoration: none;
+  color: var(--light-secondary);
+  transition: ease all 0.1s;
+}
+
+.sidebar a:hover {
+  color: var(--accent-secondary);
+  transition: ease all 0.1s;
+}
+
+.sidebar a:active {
+  filter: brightness(0.8);
+  transition: ease all 0.1s;
+}
+
 /* PLACEHOLDERS */
 .sidebar .placeholder-0,
 .sidebar .placeholder-1 {
   justify-self: center;
 }
 
-.sidebar a,
-.sidebar a:visited,
-.sidebar a:active {
-  text-decoration: none;
-  color: #ECEFF4;
-}
+
 
 /* Header and top bar */
 .header {
@@ -181,17 +194,27 @@ input[type="search"] {
 .account-actions button {
   width: 100px;
   height: 40px;
-  /* border: 1px solid var(--dark-primary); */
   border-radius: 12px;
   
   background-color: var(--accent-secondary);
-  /* background-color: var(--light-secondary);   */
   color: var(--dark-primary);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  transition: all ease 0.1s;
 
   font-size: 1.1rem;
   font-weight: 500;
 
   cursor: pointer;
+}
+
+.account-actions button:hover {
+  filter: brightness(0.9);
+  transition: all ease 0.1s;
+}
+
+.account-actions button:active {
+    transition: all 0.1s ease;
+    filter: brightness(0.8);
 }
 
 /* Main content */
@@ -235,6 +258,12 @@ input[type="search"] {
   background-color: var(--light-tertiary);
   border-radius: 8px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  transition: ease all 0.1s;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: ease all 0.1s;
 }
 
 .project-actions {
